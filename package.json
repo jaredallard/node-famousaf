@@ -1,6 +1,6 @@
 {
   "name": "famousaf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Interact with famous.af via Node.js",
   "main": "./lib/famousaf.js",
   "scripts": {
