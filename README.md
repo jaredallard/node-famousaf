@@ -74,7 +74,8 @@ famous.fan('rylorjs')
     return console.log('got', resp.data);
   })
 
-famous.whois('rylor')
+// Get information about a user.
+famous.whois('rylorjs')
   .catch(err => {
     return console.error('error', err);
   })
@@ -82,6 +83,14 @@ famous.whois('rylor')
     return console.log('got', resp.data);
   })
 
+// get information about "you"
+famous.me()
+  .catch(err => {
+    return console.error('error', err);
+  })
+  .then(resp => {
+    return console.log('got', resp.data);
+  })
 ```
 
 ## Reporting Errors
