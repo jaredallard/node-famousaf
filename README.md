@@ -91,6 +91,24 @@ famous.me()
   .then(resp => {
     return console.log('got', resp.data);
   })
+
+// use a stream.
+let stream = famous.stream();
+
+stream.on('message', (data) => {
+  console.log('STREAM: got', data);
+});
+
+stream.on('open', () => {
+  console.log('STREAM: is open');
+})
+
+// get the famous API version.
+famous.APIVersion()
+  .then(resp => {
+    console.log(resp.data.api);
+  })
+
 ```
 
 ## Reporting Errors
