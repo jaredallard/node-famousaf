@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/jaredallard/node-famousaf#readme",
   "dependencies": {
-    "async": "^2.0.0-rc.3",
+    "async": "^2.0.0-rc.4",
     "bufferutil": "^1.2.1",
     "debug": "^2.2.0",
     "jsdom": "^8.5.0",
