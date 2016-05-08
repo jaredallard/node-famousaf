@@ -109,6 +109,19 @@ famous.APIVersion()
     console.log(resp.data.api);
   })
 
+// get your current faves.
+famous.faves()
+  .then(resp => {
+    // currently an array of fans.
+    console.log(resp.data);
+  });
+
+// get people you used to be fans of.
+famous.bumped()
+  .then(resp => {
+    // currently an array of fans.
+    console.log(resp.data);
+  })
 ```
 
 ## Reporting Errors
